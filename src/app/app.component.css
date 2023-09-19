@@ -1,0 +1,7 @@
+/* app.component.css */
+/* You can add a background color and a margin for the app component */
+app-root {
+    background-color: lightgray;
+    margin: 20px;
+  }
+  

@@ -1,0 +1,31 @@
+/* product.component.css */
+/* You can add some padding and border for the product cards */
+.card {
+    padding: 10px;
+    border: 1px solid black;
+  }
+  
+  /* You can add some margin and font size for the product title */
+  .card-title {
+    margin: 10px;
+    font-size: 20px;
+  }
+  
+  /* You can add some margin and font size for the product text */
+  .card-text {
+    margin: 10px;
+    font-size: 16px;
+  }
+  
+  /* You can add some margin and font size for the cart list items */
+  .list-group-item {
+    margin: 5px;
+    font-size: 18px;
+  }
+  
+  /* You can add some color and font weight for the total price and best price */
+  .list-group-item strong {
+    color: green;
+    font-weight: bold;
+  }
+  
