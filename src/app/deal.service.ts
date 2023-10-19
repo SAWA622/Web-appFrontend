@@ -1,27 +1,21 @@
-// deal.service.ts
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Deal } from './deal.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DealService {
+  private baseUrl = 'https://thisis-6el4.onrender.com/deals';
 
-   // Replace with your actual backend URL
-   private baseUrl = 'http://localhost:3000/deals';
+  constructor(private http: HttpClient) {}
 
-   constructor(private http: HttpClient) { }
+  getDeals(): Observable<Deal[]> {
+    return this.http.get<Deal[]>(this.baseUrl);
+  }
 
-   // Get all deals from the backend
-   getDeals(): Observable<Deal[]> {
-     return this.http.get<Deal[]>(this.baseUrl);
-   }
-
-   // Create a new deal and send it to the backend
-   createDeal(deal: Deal): Observable<Deal> {
-     return this.http.post<Deal>(this.baseUrl, deal);
-   }
-
+  createDeal(deal: Deal): Observable<Deal> {
+    return this.http.post<Deal>(this.baseUrl, deal);
+  }
 }

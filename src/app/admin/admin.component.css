@@ -1,31 +1,24 @@
-/* admin.component.css */
-/* You can add some padding and border for the admin form */
 form {
-    padding: 10px;
-    border: 1px solid black;
-  }
-  
-  /* You can add some margin and font size for the form label */
-  .form-label {
-    margin: 10px;
-    font-size: 16px;
-  }
-  
-  /* You can add some margin and width for the form input */
-  .form-control {
-    margin: 10px;
-    width: 80%;
-  }
-  
-  /* You can add some margin and color for the form button */
-  .btn {
-    margin: 10px;
-    color: white;
-  }
-  
-  /* You can add some margin and font size for the current deals list items */
-  .list-group-item {
-    margin: 5px;
-    font-size: 18px;
-  }
-  
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.form-label {
+  margin: 10px;
+  font-size: 16px;
+}
+
+.form-control {
+  margin: 10px;
+  width: 80%;
+}
+
+.btn {
+  margin: 10px;
+  color: white;
+}
+
+.list-group-item {
+  margin: 5px;
+  font-size: 18px;
+}

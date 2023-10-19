@@ -1,5 +1,4 @@
-// deal.model.ts
-import { Product } from "./product.model";
+import { Product } from './product.model';
 
 export interface Deal {
   _id?: string;
